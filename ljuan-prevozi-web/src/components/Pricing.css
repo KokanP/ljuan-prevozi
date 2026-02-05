@@ -1,0 +1,106 @@
+.pricing-section {
+  text-align: center;
+  padding: 4rem 1.5rem;
+  background-color: #ffffff;
+}
+
+.pricing-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #0d6efd;
+}
+
+.pricing-disclaimer {
+  font-size: 1.1rem;
+  margin-bottom: 3rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.8;
+  color: #555;
+}
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.pricing-card {
+  background-color: #f8f9fa;
+  padding: 2.5rem 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pricing-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.pricing-card h3 {
+  font-size: 1.8rem;
+  color: #0d6efd;
+  margin-bottom: 1.5rem;
+}
+
+.pricing-card .price {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.pricing-card ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+.pricing-card ul li {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 0.8rem;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.pricing-card ul li::before {
+  content: '✔'; /* Checkmark icon */
+  color: #28a745; /* Green checkmark */
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.pricing-card .btn {
+  margin-top: auto; /* Push button to the bottom */
+}
+
+.note {
+  margin-top: 3rem;
+  font-size: 0.9rem;
+  color: #777;
+}
+
+@media (max-width: 768px) {
+  .pricing-section h2 {
+    font-size: 2rem;
+  }
+
+  .pricing-disclaimer {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .pricing-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}

@@ -1,0 +1,20 @@
+/* General layout for the application */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1; /* Takes up remaining space */
+}
+
+section {
+  padding: 4rem 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+section:nth-of-type(even) {
+  background-color: #f9f9f9;
+}

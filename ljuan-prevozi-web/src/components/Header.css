@@ -1,0 +1,58 @@
+.header {
+  background-color: #0d6efd; /* A shade of blue, consistent with "Moder Lev" */
+  color: white;
+  padding: 1rem 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.5rem;
+}
+
+.header .logo {
+  height: 50px; /* Adjust as needed */
+  margin-right: 1rem;
+}
+
+.site-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: white; /* Ensure title is white against blue background */
+  margin: 0;
+}
+
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.main-nav a {
+  color: white;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.main-nav a:hover {
+  color: #e0e0e0; /* Lighter shade on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .main-nav ul {
+    margin-top: 1rem;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}

@@ -1,0 +1,61 @@
+.hero-section {
+  background-color: #0a58ca; /* Darker blue from Moder Lev branding */
+  /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/YOUR_HERO_BACKGROUND_IMAGE.jpg') no-repeat center center; /* Uncomment and replace with your desired background image */
+  background-size: cover;
+  color: white;
+  text-align: center;
+  padding: 8rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 70vh; /* Make hero section take up a good portion of the viewport */
+}
+
+.hero-content {
+  max-width: 800px;
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  color: white; /* Ensure headings are white */
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  color: white;
+}
+
+.btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary {
+  background-color: #0d6efd; /* Primary blue */
+  color: white;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #0a58ca; /* Darker blue on hover */
+}
+
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-content p {
+    font-size: 1.2rem;
+  }
+
+  .hero-section {
+    padding: 6rem 1rem;
+  }
+}
